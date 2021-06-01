@@ -8,7 +8,7 @@ for ClientAccount Entity
  */
 import org.junit.jupiter.api.Test;
 import za.ac.cput.Entity.ClientAccount;
-import za.ac.cput.Entity.Employees;
+
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -16,8 +16,10 @@ class ClientAccountFactoryTest
 {
     @Test
     public void createClientAccount(){
-        ClientAccount clientAccount = ClientAccountFactory.createClientFactory("Number of  cars rented are 4");
-        System.out.println(clientAccount);
+        ClientAccount account = ClientAccountFactory.createClientAccount("4");
+        System.out.println(account);
+
+
     }
 
 }

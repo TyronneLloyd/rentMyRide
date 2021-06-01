@@ -16,8 +16,7 @@ public class ClientAccount
     }
 
     public static class Builder {
-        private String accountNum;
-        private String numBorrowed;
+        private String accountNum,numBorrowed;
 
         public Builder setAccountNum(String accountNum) {
             this.accountNum = accountNum;

@@ -12,12 +12,14 @@ for ClientAccount Entity
  */
 public class ClientAccountFactory
 {
-    public  static ClientAccount createClientFactory (String numBorrowed)
+    public  static ClientAccount createClientAccount (String numBorrowed)
     {
-        String accountNum  = GenerateHelper.generateEmp_Num();
+        String accountNum  = GenerateHelper.generateAccount_Num();
+
          ClientAccount clientAccount = new ClientAccount.Builder()
                  .setAccountNum(accountNum)
                  .setNumBorrowed(numBorrowed).build();
+
          return clientAccount;
     }
 
