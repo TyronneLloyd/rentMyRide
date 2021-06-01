@@ -17,6 +17,7 @@ class ClientAccountFactoryTest
     @Test
     public void createClientAccount(){
         ClientAccount account = ClientAccountFactory.createClientAccount("4");
+        assertNotNull(account);
         System.out.println(account);
 
 
