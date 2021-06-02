@@ -8,7 +8,7 @@ for ClientAccount Entity
  */
 public class ClientAccount
 {
-    private int accountNum, numBorrowed;
+    private String accountNum, numBorrowed;
 
     private ClientAccount(Builder builder) {
         this.accountNum = builder.accountNum;
@@ -16,14 +16,14 @@ public class ClientAccount
     }
 
     public static class Builder {
-        private int accountNum, numBorrowed;
+        private String accountNum,numBorrowed;
 
-        public Builder setAccountNum(int accountNum) {
+        public Builder setAccountNum(String accountNum) {
             this.accountNum = accountNum;
             return this;
         }
 
-        public Builder setNumBorrowed(int numBorrowed) {
+        public Builder setNumBorrowed(String numBorrowed) {
             this.numBorrowed = numBorrowed;
             return this;
         }
@@ -46,11 +46,11 @@ public class ClientAccount
                     '}';
         }
 
-        public int getAccountNum() {
+        public String getAccountNum() {
             return accountNum;
         }
 
-        public int getNumBorrowed() {
+        public String getNumBorrowed() {
             return numBorrowed;
         }
     }
