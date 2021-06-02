@@ -57,11 +57,12 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "Employee Number='" + employeeNumber + '\'' +
-                ", First Name='" + name + '\'' +
+        return "Employee: " +
+                "Number='" + employeeNumber + '\'' +
+                ", Name='" + name + '\'' +
                 ", Surname='" + surname + '\'' +
                 ", Login Credentials='" + loginCredentials + '\'' +
+                ", User Type='" + userType + '\'' +
                 '}';
     }
 

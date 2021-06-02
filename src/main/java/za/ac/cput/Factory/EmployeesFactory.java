@@ -13,7 +13,7 @@ public class EmployeesFactory {
         String employeeNumber = GenerateHelper.generateEmp_Num();
 
         Employee employees = new Employee.Builder()
-                    .setEmp_Num(employeeNumber )
+                    .setEmp_Num(employeeNumber)
                     .setFirstName(firstname)
                     .setSurname(surname)
                     .setLogin_Credentials(loginCredentials)

@@ -4,8 +4,9 @@ package za.ac.cput.Factory;
     @Author: Tyronne Lloyd Hendricks
     @Student Number: 215141210
     @Date: 28 May 2021
-  */
+ */
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 import za.ac.cput.Entity.Employee;
 
 
@@ -13,7 +14,8 @@ class EmployeesFactoryTest {
     @Test
     public void createEmployees(){
         Employee employees = EmployeesFactory.createEmployees("Tyronne", "Hendricks","Admin","Admin");
+        assertNotNull(employees);
         System.out.println(employees);
-    }
 
+    }
 }
