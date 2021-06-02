@@ -14,6 +14,13 @@ public class ClientAccount
         this.accountNum = builder.accountNum;
         this.numBorrowed = builder.numBorrowed;
     }
+    public String getAccountNum() {
+        return accountNum;
+    }
+
+    public String getNumBorrowed() {
+        return numBorrowed;
+    }
 
     public static class Builder {
         private String accountNum,numBorrowed;
@@ -46,12 +53,6 @@ public class ClientAccount
                     '}';
         }
 
-        public String getAccountNum() {
-            return accountNum;
-        }
 
-        public String getNumBorrowed() {
-            return numBorrowed;
-        }
     }
 }
